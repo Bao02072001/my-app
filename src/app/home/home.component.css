@@ -1,0 +1,11 @@
+.underage{
+    color: red;
+}
+.aboveage{
+    color: green;
+    background-color:#000;
+}
+.marginBox{
+    padding: 10px;
+    border-radius:10px
+}
