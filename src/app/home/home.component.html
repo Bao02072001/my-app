@@ -1,0 +1,20 @@
+<h1>ALooo tui ten la <span class="underage">{{name}}</span></h1>
+<div class="underage">So tuoi cua tui la {{age|number:"1.0-2"}}</div>
+<br>
+<span *ngIf="age<18;then condition1;else condition2"></span>
+<ng-template #condition1 class="underage">Tui con tre {{age}}</ng-template>
+<ng-template #condition2 class="aboveage">Tui qua gia{{age}}</ng-template>
+<br>
+Danh sach xe <br>
+<div *ngFor="let vehicle of vehicles">
+    <li>{{vehicle}}</li>
+</div>
+<input [(ngModel)]="name"/>
+<ul *ngFor="let item of vehicles">
+    <li>{{item}}</li>
+</ul>
+<select>
+    <option *ngFor="let vehicle of vehicles">{{vehicle}}</option>
+</select>
+<br>
+<button class="marginBox" (click)="tangTuoi()">Tang tuoi</button>
